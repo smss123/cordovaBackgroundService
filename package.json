@@ -1,0 +1,14 @@
+{
+  "name": "com.xprema.backgroundworkerX",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "com.xprema.backgroundworkerX",
+    "platforms": []
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "",
+  "license": "ISC"
+}

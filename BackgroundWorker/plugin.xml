@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.xprema.backgroundworkerX" version="0.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>BackgroundWorker</name>
+    <js-module name="BackgroundWorker" src="www/BackgroundWorker.js">
+        <clobbers target="cordova.plugins.BackgroundWorker" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="BackgroundWorker">
+                <param name="android-package" value="com.xprema.backgroundworkerX.BackgroundWorker" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/BackgroundWorker.java" target-dir="src/com/xprema/backgroundworkerX/BackgroundWorker" />
+    </platform>
+</plugin>
